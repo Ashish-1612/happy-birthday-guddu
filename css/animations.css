@@ -1,0 +1,568 @@
+/* ==========================================
+   Premium Animations
+   Happy Birthday Guddu ❤️
+==========================================*/
+
+/* Background Animation */
+
+body{
+    animation:gradientFlow 18s ease infinite;
+}
+
+@keyframes gradientFlow{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* Aurora */
+
+#aurora{
+
+animation:auroraMove 20s ease-in-out infinite;
+
+}
+
+@keyframes auroraMove{
+
+0%{
+
+transform:translate(-8%,-5%) scale(1);
+
+}
+
+25%{
+
+transform:translate(5%,6%) scale(1.15);
+
+}
+
+50%{
+
+transform:translate(8%,-6%) scale(.95);
+
+}
+
+75%{
+
+transform:translate(-6%,8%) scale(1.1);
+
+}
+
+100%{
+
+transform:translate(-8%,-5%) scale(1);
+
+}
+
+}
+
+/* Floating Intro */
+
+.intro-content{
+
+animation:introFloat 6s ease-in-out infinite;
+
+}
+
+@keyframes introFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+/* Heart Beat */
+
+.heart{
+
+display:inline-block;
+
+animation:heartbeat 1.4s infinite;
+
+}
+
+@keyframes heartbeat{
+
+0%{
+
+transform:scale(1);
+
+}
+
+20%{
+
+transform:scale(1.2);
+
+}
+
+40%{
+
+transform:scale(.95);
+
+}
+
+60%{
+
+transform:scale(1.25);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* Fade Up */
+
+.chapter{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s ease;
+
+}
+
+.chapter.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Hero Card */
+
+.glass-card{
+
+animation:glassGlow 5s ease-in-out infinite;
+
+}
+
+@keyframes glassGlow{
+
+0%{
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+
+}
+
+50%{
+
+box-shadow:
+0 25px 70px rgba(255,105,180,.35),
+0 0 30px rgba(183,148,244,.3);
+
+}
+
+100%{
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+
+}
+
+}
+
+/* Button Pulse */
+
+button,
+.premium-btn{
+
+animation:pulseButton 3s infinite;
+
+}
+
+@keyframes pulseButton{
+
+0%{
+
+box-shadow:
+0 0 0 rgba(255,105,180,.5);
+
+}
+
+50%{
+
+box-shadow:
+0 0 30px rgba(255,105,180,.55);
+
+}
+
+100%{
+
+box-shadow:
+0 0 0 rgba(255,105,180,.5);
+
+}
+
+}
+
+/* Music Button */
+
+.music-btn{
+
+animation:musicFloat 4s ease infinite;
+
+}
+
+@keyframes musicFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+/* Scroll Arrow */
+
+.scroll-down{
+
+animation:scrollBounce 2s infinite;
+
+}
+
+@keyframes scrollBounce{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(12px);
+
+}
+
+}
+
+/* Sparkles */
+
+.sparkle{
+
+position:absolute;
+
+width:4px;
+
+height:4px;
+
+border-radius:50%;
+
+background:white;
+
+animation:sparkle 4s linear forwards;
+
+}
+
+@keyframes sparkle{
+
+0%{
+
+opacity:0;
+transform:scale(.2);
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+transform:translateY(-120px) scale(2);
+
+}
+
+}
+
+/* Floating Hearts */
+
+.float-heart{
+
+position:absolute;
+
+bottom:-50px;
+
+font-size:22px;
+
+animation:heartFloat linear forwards;
+
+}
+
+@keyframes heartFloat{
+
+0%{
+
+opacity:0;
+
+transform:translateY(0) rotate(0deg);
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+transform:
+translateY(-120vh)
+rotate(360deg);
+
+}
+
+}
+
+/* Balloons */
+
+.balloon{
+
+position:absolute;
+
+bottom:-150px;
+
+width:70px;
+
+height:90px;
+
+border-radius:50%;
+
+animation:balloonUp linear forwards;
+
+box-shadow:
+inset -8px -10px 18px rgba(0,0,0,.18);
+
+}
+
+.balloon::after{
+
+content:"";
+
+position:absolute;
+
+left:34px;
+
+top:90px;
+
+width:2px;
+
+height:90px;
+
+background:white;
+
+}
+
+@keyframes balloonUp{
+
+0%{
+
+transform:
+translateY(0)
+rotate(-6deg);
+
+}
+
+50%{
+
+transform:
+translateY(-60vh)
+rotate(6deg);
+
+}
+
+100%{
+
+transform:
+translateY(-140vh)
+rotate(-4deg);
+
+}
+
+}
+
+/* Rose Petals */
+
+.petal{
+
+position:absolute;
+
+font-size:22px;
+
+animation:petalFall linear forwards;
+
+}
+
+@keyframes petalFall{
+
+0%{
+
+opacity:0;
+
+transform:
+translateY(-20px)
+rotate(0deg);
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+transform:
+translateY(120vh)
+rotate(600deg);
+
+}
+
+}
+
+/* Butterfly */
+
+.butterfly{
+
+position:absolute;
+
+font-size:24px;
+
+animation:butterfly 12s linear forwards;
+
+}
+
+@keyframes butterfly{
+
+0%{
+
+transform:
+translate(-20vw,90vh);
+
+}
+
+25%{
+
+transform:
+translate(20vw,60vh);
+
+}
+
+50%{
+
+transform:
+translate(50vw,40vh);
+
+}
+
+75%{
+
+transform:
+translate(70vw,20vh);
+
+}
+
+100%{
+
+transform:
+translate(120vw,-10vh);
+
+}
+
+}
+
+/* Fade */
+
+.fade-in{
+
+animation:fadeIn 1.2s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+/* Zoom */
+
+.zoom{
+
+animation:zoom 1s ease;
+
+}
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.9);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
