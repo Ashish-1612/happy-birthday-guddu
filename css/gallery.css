@@ -1,0 +1,188 @@
+/* ==========================================
+   Premium Gallery
+========================================== */
+
+.gallery-section{
+    min-height:100vh;
+    padding:100px 20px;
+}
+
+.gallery-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.gallery-title h2{
+
+    font-size:52px;
+
+    color:white;
+
+    font-family:"Great Vibes",cursive;
+
+}
+
+.gallery-title p{
+
+    margin-top:15px;
+
+    color:#ffd6ef;
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:28px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.photo-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.5s;
+
+    cursor:pointer;
+
+}
+
+.photo-card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.03);
+
+}
+
+.photo-card img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    transition:1s;
+
+}
+
+.photo-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.photo-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    padding:25px;
+
+    background:linear-gradient(
+    transparent,
+    rgba(0,0,0,.75));
+
+    opacity:0;
+
+    transition:.5s;
+
+}
+
+.photo-card:hover .photo-overlay{
+
+    opacity:1;
+
+}
+
+.photo-overlay h3{
+
+    color:white;
+
+}
+
+.photo-overlay p{
+
+    color:#ffe6f5;
+
+    margin-top:8px;
+
+    text-align:center;
+
+}
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.92);
+
+    z-index:9999;
+
+}
+
+.lightbox img{
+
+    max-width:92%;
+
+    max-height:88vh;
+
+    border-radius:18px;
+
+    box-shadow:0 0 50px rgba(255,255,255,.2);
+
+}
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    font-size:38px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
